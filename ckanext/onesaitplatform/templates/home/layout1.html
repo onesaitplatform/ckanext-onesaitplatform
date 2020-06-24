@@ -1,0 +1,82 @@
+<div role="main" class="hero" style="background: url({{ h.url_for_static('/images/bg6.jpg')}}); background-repeat: no-repeat; background-position: 25% 10%; background-size: cover; min-height: 425px">
+  <div class="container">
+    <div class="row row1">
+      <!-- <div class="col-md-6 col1">
+        {% block promoted %}
+          {% snippet 'home/snippets/promoted.html' %}
+        {% endblock %}
+      </div> -->
+	  
+	  <div class="col-md-12 col1" style="top:0;margin-top: 35px;">
+      <!--<div class="col-md-6 col2" style="top:0"> -->
+        {% block search %}
+          {% snippet 'home/snippets/search.html' %}
+        {% endblock %}
+		
+		{% block mainCounters %}
+			{% snippet 'home/snippets/mainCounters.html' %}
+		{% endblock %}
+		
+      </div>
+    </div>
+  </div>
+</div>
+<div role="main">
+  <div class="container">
+
+	<div class="row margin-bottom-30">
+		<div class="col-md-8 col-md-offset-2 ckan-section-heading text-center">
+			<h2 class="ckan-lead ">OpenData Organizations</h2>
+			<p class="ckan-sub fadeInUp">Get the most out of your data and model your business based on standards that ensure consistency and interoperability.</p>
+		</div>	
+
+	  {% set organizations = h.get_featured_organizations(-1) %}
+	  {% block organizations %}
+		{% for organization in organizations %}
+			{% snippet "organization/snippets/organization_item.html", organization=organization, position=loop.index, show_capacity=show_capacity %}
+		{% endfor %}
+	  {% endblock %}
+	   
+	</div>	
+
+	{% set showcases = h.showcases_list_helper() %}
+	{% if showcases %}
+	<div id="showcases" class="row margin-bottom-50">
+		<div class="col-md-8 col-md-offset-2 ckan-section-heading text-center">
+			<h2 class="ckan-lead ">OpenData Showcases</h2>
+			<p class="ckan-sub fadeInUp">Get all the information and related news from Onesait OpenData.</p>
+		</div>	
+		<div id="showcase-list">
+		{% block showcase_list %}
+		{% for showcaseListOne in showcases %}
+			{% set showcase = h.showcase_show_helper(showcaseListOne.name) %}
+			{% set truncate = truncate or 180 %}
+			{% set truncate_title = truncate_title or 80 %}
+			{% set title = showcase.title or showcase.name %}
+			{% set notes = h.markdown_extract(showcase.notes, extract_length=truncate) %}
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="card-showcase"> 
+					<div class="content">
+						<div class="logo" style="background: url({{ showcase.image_display_url }}); background-repeat: no-repeat; background-size: cover;" alt="{{ showcase.name }}"></div>
+						<h6 class="ckan-uppercase-sm">{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='read', id=showcase.name)) }}</h6>
+					    <div class="hover_content">
+							{% if notes %}
+							<p>{{ notes|urlize }}</p>
+							{% else %}
+							<p class="empty"></p>
+							{% endif %}
+					    </div>
+					</div>
+				</div>
+			</div>
+			{% if loop.index is divisibleby 3 %}
+			<div class="clearfix"></div>
+			{% endif %}
+		{% endfor %}
+		{% endblock %}
+		</div>
+	</div>
+	{% endif %}
+	
+  </div>
+</div>

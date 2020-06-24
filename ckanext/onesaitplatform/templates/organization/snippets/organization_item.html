@@ -1,0 +1,36 @@
+{% set url = h.url_for(organization.type ~ '_read', action='read', id=organization.name) %}
+{% block item %}
+<div class="col-md-4 col-sm-6 text-center ckan-text-wrap">
+	<div class="ckan-text fadeInUp card ">
+		{% block image %}
+		 {% if organization.image_display_url %}		
+			<img src="{{ organization.image_display_url or h.url_for_static('/base/images/placeholder-organization.png') }}" alt="{{ organization.name }}" class="img-responsive media-image" style="margin: auto; width: 45%">
+		 {% else %}
+			<span class="font-size:30px"><i class="linearicons-layers"></i></span>
+		 {% endif %}
+		{% endblock %}	
+		
+		
+		{% block link %}
+		  <h4 class="ckan-uppercase-sm"><a href="{{ url }}" title="{{ _('View {organization_name}').format(organization_name=organization.display_name) }}" class="">
+			{% block title %}
+			{{ organization.display_name }} 
+				{% block datasets %}
+					{% if organization.package_count %}
+					  (<span class="counter">{{ ungettext('{num} Dataset', '{num} Datasets', organization.package_count).format(num=organization.package_count) }}</span>)
+					{% else %}
+					  (<span class="counter">{{ _('0 Datasets') }}</span>)
+					{% endif %}
+				{% endblock %}
+			  </a></h4>
+			  {% endblock %}		
+		{% endblock %}
+		{% block description %}
+			{% if organization.description %}
+			  <p>{{ h.markdown_extract(organization.description, extract_length=80) }}</p>
+			{% endif %}
+		  {% endblock %}
+	</div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,54 @@
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <img src="{{ h.url_for_static('/images/logo.png')}}" class="logo-footer" style="width: 250px; height: auto; margin-bottom: 15px;">
+            <p class="text-justify" style="padding: 0px 50px 0px 0px;">CKAN Onesait Platform OpenData Portal.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Sitemap</h6>
+            <ul class="footer-links">
+              <li><a href="{{ h.url_for(controller='organization', action='index') }}">Organizations</a></li>
+              <li><a href="{{ h.url_for(controller='group', action='index') }}">Groups</a></li>
+              <li><a href="{{ h.url_for(controller='package', action='search') }}">Datasets</a></li>
+              <li><a href="{{ h.url_for('/showcase') }}">Showcases</a></li>                         
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+			<ul class="footer-links">
+			{% block footer_links %}
+<!--              <li><a href="{{ h.url_for(controller='home', action='about') }}">{{ _('About {0}').format(g.site_title) }}</a></li>-->
+			  <li><a href="https://www.onesait.com/platform4/">Onesait Platform</a></li>
+			  <li><a href="https://www.minsait.com/">Minsait</a></li>
+			  <li><a href="https://www.indracompany.com/">Indra Company</a></li>	 
+			{% endblock %}
+			</ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright © 2020 All Rights Reserved by <a href="https://www.onesait.com/" style="color: #FDE3D3;">Onesait</a>, an Indra Company.</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter"  href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="youtube"  href="#"><i class="fa fa-youtube"></i></a></li>                 
+            </ul>
+          </div>
+        </div>
+      </div>
+		{% block footer_debug %}
+			{% if g.debug %}
+				{% include 'snippets/debug.html' %}
+			{% endif %}
+		{% endblock %}
+</footer>	
+
+

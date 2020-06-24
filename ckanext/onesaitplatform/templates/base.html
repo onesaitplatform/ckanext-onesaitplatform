@@ -1,0 +1,14 @@
+{% ckan_extends %}
+
+{% block styles %}
+  {{ super() }}
+  
+  <!-- ONESAIT THEME Css and scripts -->  
+  <link rel="stylesheet" href="{{ h.url_for_static_or_external('/fonts.css')}}" />  
+  <link rel="stylesheet" href="{{ h.url_for_static_or_external('/animate.css')}}" />
+  <link rel="stylesheet" href="{{ h.url_for_static_or_external('/onesait.css')}}" />
+  
+  <script src="{{ h.url_for_static_or_external('/js/CKAN_CORE.min.js') }}"></script>
+  <script src="{{ h.url_for_static_or_external('/js/CKAN_Controller.js') }}"></script>
+  
+{% endblock %}

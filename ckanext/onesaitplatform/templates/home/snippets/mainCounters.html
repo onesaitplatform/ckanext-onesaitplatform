@@ -1,0 +1,24 @@
+{% set stats = h.get_site_statistics() %}
+<div class="col-md-12">
+    <div class="counters flexbox "> 	
+	{% block stats_group %}
+		<div class="col-md-4 col-xs-6 main-counter">
+			<i class="linearicons-database" style="font-size: 40px;"></i>
+			<a href="{{ h.url_for(controller='package', action='search') }}" class="main-counter-data"><span class="counter"> {{ h.SI_number_span(stats.dataset_count) }}</span> <small>{{ _('Dataset') if stats.dataset_count == 1 else _('Datasets') }}</small></a>
+		</div>		
+		<div class="col-md-4 col-xs-6 main-counter">
+			<i class="linearicons-layers" style="font-size: 40px;"></i>
+			<a href="{{ h.url_for(controller='organization', action='index') }}" class="main-counter-data"><span class="counter"> {{ h.SI_number_span(stats.organization_count) }}</span> <small>{{ _('Organization') if stats.organization_count == 1 else _('Organizations') }}</small></a>
+		</div>		
+		<div class="col-md-4 col-xs-6 main-counter">
+			<i class="linearicons-apartment" style="font-size: 40px;"></i>
+			<a href="{{ h.url_for(controller='group', action='index') }}" class="main-counter-data"><span class="counter"> {{ h.SI_number_span(stats.group_count) }}</span> <small>{{ _('Group') if stats.group_count == 1 else _('Groups') }}</small></a>
+		</div>
+		
+		<div class="col-md-4 col-xs-6 main-counter">
+			<i class="linearicons-screen" style="font-size: 40px;"></i>
+			<a href="{{ h.url_for('/showcase') }}" class="main-counter-data"><span class="counter"> {{ h.SI_number_span(stats.showcase_count) }}</span> <small>{{ ungettext('showcase', 'showcases', stats.showcase_count) }}</small></a>
+		</div>
+   </div>
+   {% endblock %} 
+</div>

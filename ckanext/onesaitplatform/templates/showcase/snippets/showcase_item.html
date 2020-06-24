@@ -1,0 +1,42 @@
+{#
+Displays a single dataset of type 'showcase'.
+
+package        - A package to display.
+item_class     - The class name to use on the list item.
+truncate       - The length to trucate the description to (default: 180)
+truncate_title - The length to truncate the title to (default: 80).
+show_remove    - If True, show the remove button to remove showcase/dataset association.
+
+#}
+{% set truncate = truncate or 180 %}
+{% set truncate_title = truncate_title or 80 %}
+{% set title = package.title or package.name %}
+{% set notes = h.markdown_extract(package.notes, extract_length=truncate) %}
+
+{% block package_item %}
+<div class="col-md-6 col-sm-6 col-xs-12">
+	<div class="card-showcase"> 
+		<div class="content">			 
+		 {% block image %}
+		 <div class="logo" style="background: url({{ package.image_display_url or h.url_for_static('/base/images/placeholder-group.png')}}); background-repeat: no-repeat; background-size: cover;" alt="{{ package.name }}"></div>
+		 {% endblock %}
+		 {% block title %}
+		   <h6 class="ckan-uppercase-sm">{{ h.link_to(h.truncate(title, truncate_title), h.url_for(controller='ckanext.showcase.controller:ShowcaseController', action='read', id=package.name)) }}</h6>
+		 {% endblock %}
+		  <div class="hover_content">
+			 {% block notes %}
+				{% if notes %}
+			<p>{{ notes|urlize }}</p>
+			{% else %}
+			<p class="empty">{{ _("This showcase has no description") }}</p>
+			{% endif %}
+			{% endblock %}
+		  </div>
+		</div>
+	</div>
+</div>
+{% if position is divisibleby 2 %}
+  <div class="clearfix"></div>
+{% endif %}
+{% endblock %}
+
