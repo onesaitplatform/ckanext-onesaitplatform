@@ -49,7 +49,7 @@ Add these properties to the config file (by default the config file is located a
 
 - If ckan is running with a non root_path set this property to true, else set it to false:
 
-	>     ckan.login_onesait = true
+	>     ckan.onesaitplatform.login = true
 
 
 ## Development Installation
