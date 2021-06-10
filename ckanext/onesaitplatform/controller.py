@@ -27,11 +27,11 @@ class OnesaitPlatformController(base.BaseController):
         # came_from_url = _get_previous_page(constants.INITIAL_PAGE)
         root_path = toolkit.config.get('ckan.root_path', None)
         locale = toolkit.config.get('ckan.locale_default','en')
-        came_from_url = None
+        came_from_url = toolkit.config.get('ckan.site_url', None)
         if root_path != None:
             root_path = root_path.replace("{{LANG}}",locale)
-            came_from_url = root_path + constants.INITIAL_PAGE
+            came_from_url += root_path + constants.INITIAL_PAGE
         else:
-            came_from_url = constants.INITIAL_PAGE
-
+            came_from_url += constants.INITIAL_PAGE
+        log.debug('login redirect to {0}'.format(came_from_url))
         self.oauth2helper.challenge(came_from_url)
