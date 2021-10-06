@@ -54,5 +54,5 @@ msgstr "Destacados"
 msgid "All Rights Reserved by "
 msgstr "Todos los derechos reservados por "
 
-msgid "una empresa de Indra."
-msgstr ""
+msgid "an Indra Company."
+msgstr "una empresa de Indra."
