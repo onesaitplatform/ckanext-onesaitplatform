@@ -1,0 +1,39 @@
+msgid "Open Data Organizations"
+msgstr ""
+
+msgid "Get the most out of your data and model your business based on standards that ensure consistency and interoperability."
+msgstr ""
+
+msgid "Open Data Showcases"
+msgstr ""
+
+msgid "Get all the information and related news from Open Data Onesait Platform."
+msgstr ""
+
+msgid "Open Data Service"
+msgstr ""
+
+msgid "Making better use of public data with Open Data Onesait Platform."
+msgstr ""
+
+msgid "CKAN Onesait Platform Open Data Portal."
+msgstr ""
+
+msgid "Organizations"
+msgstr ""
+
+msgid "Groups"
+msgstr ""
+
+msgid "Datasets"
+msgstr ""
+
+msgid "Showcases"
+msgstr ""
+
+msgid "All Rights Reserved by "
+msgstr ""
+
+msgid "an Indra Company."
+msgstr ""
+

@@ -5,6 +5,7 @@ import ckan.model as model
 from ckan.common import c
 import ckan.lib.helpers as h
 from ckan.plugins import toolkit as tk
+from ckan.lib.plugins import DefaultTranslation
 
 def showcases_list_helper():
 	showcases = tk.get_action('ckanext_showcase_list')({}, {})
@@ -14,7 +15,8 @@ def showcase_show_helper(id):
 	showcase = tk.get_action('ckanext_showcase_show')({},{'id':id})
 	return showcase
 
-class OnesaitPlatformPlugin(plugins.SingletonPlugin):
+class OnesaitPlatformPlugin(plugins.SingletonPlugin, DefaultTranslation):
+	plugins.implements(plugins.ITranslation)
 	plugins.implements(plugins.IConfigurer)
 	plugins.implements(plugins.ITemplateHelpers)
 	plugins.implements(plugins.IRoutes, inherit=True)

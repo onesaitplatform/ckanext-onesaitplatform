@@ -1,0 +1,58 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-08-25 17:42+0200\n"
+"PO-Revision-Date: 2021-08-25 17:42+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+msgid "Open Data Organizations"
+msgstr "Organizaciones Open Data"
+
+msgid "Get the most out of your data and model your business based on standards that ensure consistency and interoperability."
+msgstr "Aproveche al máximo sus datos y modele su negocio según estándares que garanticen la coherencia y la interoperabilidad."
+
+msgid "Open Data Showcases"
+msgstr "Destacados Open Data"
+
+msgid "Get all the information and related news from Open Data Onesait Platform."
+msgstr "Obtén toda la información y noticias relacionadas de Onesait Platform Open Data."
+
+msgid "Open Data Service"
+msgstr "Servicio Open Data"
+
+msgid "Making better use of public data with Open Data Onesait Platform."
+msgstr "Haciendo un mejor uso de los datos públicos con Onesait Platform Open Data."
+
+msgid "CKAN Onesait Platform Open Data Portal."
+msgstr "CKAN Portal Open Data Onesait Platform."
+
+msgid "Organizations"
+msgstr "Organizaciones"
+
+msgid "Groups"
+msgstr "Categorías"
+
+msgid "Datasets"
+msgstr "Conjuntos de Datos"
+
+msgid "Showcases"
+msgstr "Destacados"
+
+msgid "All Rights Reserved by "
+msgstr "Todos los derechos reservados por "
+
+msgid "una empresa de Indra."
+msgstr ""

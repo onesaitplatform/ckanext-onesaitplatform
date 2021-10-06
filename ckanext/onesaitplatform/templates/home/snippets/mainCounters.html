@@ -17,7 +17,7 @@
 		
 		<div class="col-md-4 col-xs-6 main-counter">
 			<i class="linearicons-screen" style="font-size: 40px;"></i>
-			<a href="{{ h.url_for('/showcase') }}" class="main-counter-data"><span class="counter"> {{ h.SI_number_span(stats.showcase_count) }}</span> <small>{{ ungettext('showcase', 'showcases', stats.showcase_count) }}</small></a>
+			<a href="{{ h.url_for('/showcase') }}" class="main-counter-data"><span class="counter"> {{ h.SI_number_span(stats.showcase_count) }}</span> <small>{{ ungettext('showcase', 'Showcases', stats.showcase_count) }}</small></a>
 		</div>
    </div>
    {% endblock %} 

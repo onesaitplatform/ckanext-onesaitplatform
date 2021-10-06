@@ -26,8 +26,9 @@
 
 	<div class="row margin-bottom-30">
 		<div class="col-md-8 col-md-offset-2 ckan-section-heading text-center">
-			<h2 class="ckan-lead ">OpenData Organizations</h2>
-			<p class="ckan-sub fadeInUp">Get the most out of your data and model your business based on standards that ensure consistency and interoperability.</p>
+			<h2 class="ckan-lead ">{% trans %}Open Data Organizations{% endtrans %}</h2>
+			<p class="ckan-sub fadeInUp">{% trans %}Get the most out of your data and model your business based on standards that ensure consistency and interoperability.{% endtrans %}
+			</p>
 		</div>	
 
 	  {% set organizations = h.get_featured_organizations(-1) %}
@@ -43,8 +44,8 @@
 	{% if showcases %}
 	<div id="showcases" class="row margin-bottom-50">
 		<div class="col-md-8 col-md-offset-2 ckan-section-heading text-center">
-			<h2 class="ckan-lead ">OpenData Showcases</h2>
-			<p class="ckan-sub fadeInUp">Get all the information and related news from Onesait OpenData.</p>
+			<h2 class="ckan-lead ">{% trans %}Open Data Showcases{% endtrans %}</h2>
+			<p class="ckan-sub fadeInUp">{% trans %}Get all the information and related news from Open Data Onesait Platform.{% endtrans %}</p>
 		</div>	
 		<div id="showcase-list">
 		{% block showcase_list %}
