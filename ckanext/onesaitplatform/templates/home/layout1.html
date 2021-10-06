@@ -1,4 +1,4 @@
-<div role="main" class="hero" style="background: url({{ h.url_for_static('/images/bg6.jpg')}}); background-repeat: no-repeat; background-position: 25% 10%; background-size: cover; min-height: 425px">
+<div role="main" class="hero">
   <div class="container">
     <div class="row row1">
       <!-- <div class="col-md-6 col1">
@@ -26,8 +26,7 @@
 
 	<div class="row margin-bottom-30">
 		<div class="col-md-8 col-md-offset-2 ckan-section-heading text-center">
-			<h2 class="ckan-lead ">{% trans %}Open Data Organizations{% endtrans %}</h2>
-			<p class="ckan-sub fadeInUp">{% trans %}Get the most out of your data and model your business based on standards that ensure consistency and interoperability.{% endtrans %}
+			<h2 class="ckan-lead ">{% trans %}Organizations{% endtrans %}</h2>
 			</p>
 		</div>	
 
@@ -44,8 +43,7 @@
 	{% if showcases %}
 	<div id="showcases" class="row margin-bottom-50">
 		<div class="col-md-8 col-md-offset-2 ckan-section-heading text-center">
-			<h2 class="ckan-lead ">{% trans %}Open Data Showcases{% endtrans %}</h2>
-			<p class="ckan-sub fadeInUp">{% trans %}Get all the information and related news from Open Data Onesait Platform.{% endtrans %}</p>
+			<h2 class="ckan-lead ">{% trans %}Showcases{% endtrans %}</h2>
 		</div>	
 		<div id="showcase-list">
 		{% block showcase_list %}

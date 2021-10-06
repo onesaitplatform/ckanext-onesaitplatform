@@ -37,3 +37,9 @@ msgstr ""
 msgid "an Indra Company."
 msgstr ""
 
+msgid "Experimental Portal"
+msgstr ""
+
+msgid "Las Palmas de Gran Canaria City Council"
+msgstr ""
+
