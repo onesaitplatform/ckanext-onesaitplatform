@@ -156,3 +156,28 @@ a.main-counter-data:hover {
 .heading {
 	color: #1a3b47;
 }
+.logo-lpa {
+	height: inherit;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#logos-lpa-right {
+    height: 45px !important;
+    padding-left: 20px;
+	padding-top: 0px;
+} 
+.logo-lpa-ue {
+	height: 60px;
+}
+.container {
+	width: 95%;
+}
+.masthead {
+	height: unset;
+}
+.masthead .navbar-collapse {
+    padding: 0;
+}
+#main-navigation-toggle {
+	padding-top: 10px;
+}
