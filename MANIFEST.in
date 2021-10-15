@@ -1,4 +1,4 @@
 include README.rst
 include LICENSE
 include requirements.txt
-recursive-include ckanext/onesaitplatform *.html *.json *.js *.less *.css *.mo *.png *.png *.jpg *.ttf *.woff *.woff2 *.otf
+recursive-include ckanext/onesaitplatform *.html *.json *.js *.less *.css *.mo *.png *.png *.jpg *.ttf *.woff *.woff2 *.otf *.svg
