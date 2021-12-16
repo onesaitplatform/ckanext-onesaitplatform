@@ -115,7 +115,12 @@
 }
 
 .site-footer {
-  background-color: #004A98;
+  background-color: #ffffff !important;
+  border-top: none;
+  background: none;
+}
+.site-footer, .site-footer label, .site-footer small {
+    color: #1a3b47;
 }
 .site-footer .navigation .nav-pills li a:hover,
 .site-footer .navigation .nav-pills li a:focus,
@@ -165,6 +170,7 @@ a.main-counter-data:hover {
     height: 45px !important;
     padding-left: 20px;
 	padding-top: 0px;
+	display: none !important;
 } 
 .logo-lpa-ue {
 	height: 60px;
@@ -180,4 +186,17 @@ a.main-counter-data:hover {
 }
 #main-navigation-toggle {
 	padding-top: 10px;
+}
+.copyright-text {
+	margin-top: 15px;
+}
+.logo-lpa-ayto {
+	height: 50px;
+	border-right: 1px;
+    border-style: solid;
+    border-color: #d5dce0;
+    padding-right: 21px;
+}
+.logo-lpa-right {
+	float: right;
 }

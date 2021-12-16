@@ -74,7 +74,10 @@
     </div>
     <hgroup class="{{ g.header_class }} navbar-left">
       {% block header_logo %} {% if g.site_logo %}
-      <a class="logo" href="{{ h.url_for('home.index') }}"><img src="{{ h.url_for_static_or_external(g.site_logo, __ckan_no_root=True) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" /></a>
+      <a href="{{ h.url_for('home.index') }}">
+	  <img src="{{ h.url_for_static('/images/LPAcabecera.svg') }}" class="logo-lpa logo-lpa-ayto" />
+	  <img src="{{ h.url_for_static_or_external(g.site_logo, __ckan_no_root=True) }}" alt="{{ g.site_title }}" title="{{ g.site_title }}" class="logo-lpa" />
+	  </a>
       {% else %}
       <h1>
         <a href="{{ h.url_for('home.index') }}">{{ g.site_title }}</a>
