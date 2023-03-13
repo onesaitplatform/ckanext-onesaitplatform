@@ -72,7 +72,7 @@
             {% endblock %}
 
             {% block primary %}
-              <div class="primary {% if '/new' in h.current_url() %} col-sm-12 bg-white {% else %} {% if  '/ckan-admin' in h.current_url () %} col-md-12 {% endif %} col-sm-9 {% endif %} col-xs-12" data-url="{{h.current_url()}}">
+              <div class="primary {% if '/new_' in h.current_url() %} col-sm-12 {% else %} {% if '/new' in h.current_url() %} col-sm-12 bg-white {% else %} {% if  '/ckan-admin' in h.current_url () %} col-md-12 {% endif %} col-sm-9 {% endif %} {% endif %} col-xs-12" data-url="{{h.current_url()}}">
                 {#
                 The primary_content block can be used to add content to the page.
                 This is the main block that is likely to be used within a template.

@@ -56,3 +56,9 @@ msgstr "Todos los derechos reservados por "
 
 msgid "an Indra Company."
 msgstr "una empresa de Indra."
+
+msgid "Statistics"
+msgstr "Estadísticas"
+
+msgid "Stats"
+msgstr "Estadísticas"

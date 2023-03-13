@@ -1,0 +1,49 @@
+{% ckan_extends %}
+
+  {% block package_description %}
+    {% if pkg.private %}
+      <span class="dataset-private label label-inverse pull-right">
+        <i class="fa fa-lock"></i>
+        {{ _('Private') }}
+      </span>
+    {% endif %}
+    <h1>
+      {% block page_heading %}
+        {{ h.dataset_display_name(pkg) }}
+        {% if pkg.state.startswith('draft') %}
+          [{{ _('Draft') }}]
+        {% endif %}
+        {% if pkg.state == 'deleted' %}
+          [{{ _('Deleted') }}]
+        {% endif %}
+    
+		<script type="text/javascript">
+			function toggleIframe () {
+				var dataset_private = document.getElementsByClassName('dataset-private').length > 0;
+				if (document.getElementById("rdf_iframe").style.display == "none") {
+					document.getElementById("rdf_iframe").style.display = "block";
+					document.getElementById("rdf_button").style.display = "block";
+					
+					if (dataset_private) 
+						document.getElementsByClassName('dataset-private')[0].setAttribute('style','margin-top:-25px');
+				} else {
+					document.getElementById("rdf_iframe").style.display = "none";
+					document.getElementById("rdf_button").style.display = "none";
+					if (dataset_private) 
+						document.getElementsByClassName('dataset-private')[0].setAttribute('style','margin-top:0px');
+				}
+			} 
+		</script>
+        <a onclick="toggleIframe()" href="javascript:void(0);" style="padding:10px"><span class="format-label" data-format="rdf"></span></a>
+		<a id="rdf_button" class="btn btn-default pull-right" target="_blank" href="{{ h.url_for('/rdf_iframe.html') }}?{{ h.url_for(controller='package', action='read', id=pkg.name) }}.rdf" style="display: none;">
+			<i class="fa fa-arrows-alt"></i>
+			{{ _("Fullscreen") }}
+		</a>
+		<iframe width="100%" id="rdf_iframe" src="{{ h.url_for('/rdf_iframe.html') }}?{{ h.url_for(controller='package', action='read', id=pkg.name) }}.rdf" style="display: none;" scrolling="no">
+		</iframe>
+		
+	  {% endblock %}
+	</h1>
+	
+  {% endblock %}
+

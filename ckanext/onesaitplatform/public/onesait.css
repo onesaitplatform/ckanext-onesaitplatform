@@ -6284,7 +6284,7 @@ a.tag:hover {
   margin-top: 0;
 }
 .ckanext-datapreview > iframe {
-  min-height: 1000px;
+  min-height: 850px;
 }
 .ckanext-datapreview > img {
   max-height: 500px;
@@ -9997,11 +9997,11 @@ iframe {
 }
 
 /* MAIN COUNTERS mainCounters.html */
-.counters { margin: 10px 50px; text-align: center; } 
+.counters { margin: 10px 0px; text-align: center; } 
 .main-counter { text-align: left;  width: 24%; display: inline-block;  color: white;  transition: .5s;  margin-left: 1%;  padding: 8px; border-radius: 8px; }
 .main-counter:hover { box-shadow: inset 0 0 25px 25px rgba(255,255,255,0.1); color: white !important; }
-.main-counter-data {  font-size: 30px; margin-top: -4px; position: absolute; margin-left: 10px; color: white;  text-decoration: none !important; } 
-.main-counter-data > small { font-size: 65%; }
+.main-counter-data {  font-size: 23px; margin-top: -4px; position: absolute; margin-left: 10px; color: white;  text-decoration: none !important; } 
+.main-counter-data > small { font-size: 75%; }
 a.main-counter-data:hover { color:white; text-decoration: none; }
 
 /* HEADER LANGUAGE SWITCH */
@@ -11828,5 +11828,31 @@ ul.product li.last {
     margin-right:0;
     font-weight:600
   }
+}
+
+#rdf_view {
+	font-weight: bold;
+}
+
+#rdf_view .tag {
+	background-color: inherit;
+	border: none;
+	margin-bottom: 2px;
+	box-shadow: none;
+}
+
+#text_view {
+	background-color: #f6f6f6;
+	overflow: scroll;
+	height: 750px;
+}
+
+#rdf_iframe {
+	margin-top: 10px;
+	margin-bottom: -90px;
+}
+
+textarea[name="comment"] {
+  margin-bottom: 10px;
 }
 
