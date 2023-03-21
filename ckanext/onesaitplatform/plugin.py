@@ -36,9 +36,13 @@ class OnesaitPlatformPlugin(plugins.SingletonPlugin, DefaultTranslation):
 
 	def before_map(self, m):
 		login_onesaitplatform = toolkit.config.get('ckan.onesaitplatform.login', False)
+		controller = 'ckanext.onesaitplatform.controller:OnesaitPlatformController'
+
 		if login_onesaitplatform:
-			m.connect('/user/login',
-                  controller='ckanext.onesaitplatform.controller:OnesaitPlatformController',
-                  action='login')
-		
+			m.connect('/user/login', controller=controller, action='login')
+            
+		m.connect('/dataset/{dataset_id}/comments/add', controller=controller, action='add_comment')
+		m.connect('/dataset/{dataset_id}/comments/{comment_id}/edit', controller=controller, action='edit_comment')
+		m.connect('/dataset/{dataset_id}/comments/{parent_id}/reply', controller=controller, action='reply_comment')
+		m.connect('/dataset/{dataset_id}/comments/{comment_id}/delete', controller=controller, action='delete_comment')
 		return m

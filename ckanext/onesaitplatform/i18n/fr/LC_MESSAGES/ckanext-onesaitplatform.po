@@ -51,6 +51,9 @@ msgstr "Jeux de Donnés"
 msgid "Showcases"
 msgstr "Showcases"
 
+msgid "Showcase"
+msgstr "Showcase"
+
 msgid "All Rights Reserved by "
 msgstr "Tous droits réservés par "
 
@@ -62,3 +65,45 @@ msgstr "Statistiques"
 
 msgid "Stats"
 msgstr "Statistiques"
+
+msgid "You must be logged in to add a comment"
+msgstr "Vous devez être connecté pour ajouter un commentaire"
+
+msgid "Comment does not exist"
+msgstr "Le commentaire n'existe pas"
+
+msgid "User is not the author of the comment"
+msgstr "L'utilisateur n'est pas l'auteur du commentaire"
+
+msgid "Subject"
+msgstr "Sujet"
+
+msgid "Comment"
+msgstr "Commentaire"
+
+msgid "Save"
+msgstr "Sauvegarder"
+
+msgid "Clear"
+msgstr "Clair"
+
+msgid "This comment was deleted."
+msgstr "Ce commentaire a été supprimé."
+
+msgid "Modified"
+msgstr "Modifié"
+
+msgid "Delete"
+msgstr "Éliminer"
+
+msgid "Edit"
+msgstr "Modifier"
+
+msgid "Reply"
+msgstr "Répondre"
+
+msgid "Comments"
+msgstr "Commentaires"
+
+msgid "Login to comment."
+msgstr "Connectez-vous pour commenter."

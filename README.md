@@ -11,6 +11,7 @@ This extension works with CKAN versions 2.8.X
 It is necessary to install and activate these extensions:
     - ckanext-showcase
     - ckanext-oauth2
+	- ckanext-ytp-comments
 
 
 ## Installation

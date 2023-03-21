@@ -37,3 +37,50 @@ msgstr ""
 msgid "an Indra Company."
 msgstr ""
 
+msgid "Statistics"
+msgstr ""
+
+msgid "Stats"
+msgstr ""
+
+msgid "You must be logged in to add a comment"
+msgstr ""
+
+msgid "Comment does not exist"
+msgstr ""
+
+msgid "User is not the author of the comment"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
+
+msgid "This comment was deleted."
+msgstr ""
+
+msgid "Modified"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Reply"
+msgstr ""
+
+msgid "Comments"
+msgstr ""
+
+msgid "Login to comment."
+msgstr ""

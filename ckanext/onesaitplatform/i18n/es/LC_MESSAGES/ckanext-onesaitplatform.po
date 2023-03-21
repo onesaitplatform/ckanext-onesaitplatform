@@ -51,14 +51,59 @@ msgstr "Conjuntos de Datos"
 msgid "Showcases"
 msgstr "Destacados"
 
+msgid "Showcase"
+msgstr "Destacado"
+
 msgid "All Rights Reserved by "
 msgstr "Todos los derechos reservados por "
 
 msgid "an Indra Company."
-msgstr "una empresa de Indra."
+msgstr "un grupo de Indra."
 
 msgid "Statistics"
 msgstr "Estadísticas"
 
 msgid "Stats"
 msgstr "Estadísticas"
+
+msgid "You must be logged in to add a comment"
+msgstr "Debes estar logado para añadir un comentario"
+
+msgid "Comment does not exist"
+msgstr "El comentario no existe"
+
+msgid "User is not the author of the comment"
+msgstr "El usuario no es el autor del comentario"
+
+msgid "Subject"
+msgstr "Asunto"
+
+msgid "Comment"
+msgstr "Comentario"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Clear"
+msgstr "Limpiar"
+
+msgid "This comment was deleted."
+msgstr "Este comentario ha sido eliminado."
+
+msgid "Modified"
+msgstr "Modificado"
+
+msgid "Delete"
+msgstr "Eliminar"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Reply"
+msgstr "Responder"
+
+msgid "Comments"
+msgstr "Comentarios"
+
+msgid "Login to comment."
+msgstr "Logarse para comentar."
