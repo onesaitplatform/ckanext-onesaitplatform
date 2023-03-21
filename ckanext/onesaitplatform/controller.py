@@ -75,8 +75,8 @@ class OnesaitPlatformController(base.BaseController):
                 root_path = toolkit.config.get('ckan.root_path','')
                 root_path = root_path.replace('{{LANG}}',h.lang())
                 if root_path == '':
-                    root_path = h.lang()
-                h.redirect_to(str('/%s/dataset/%s#comment_%s' % (root_path, c.pkg.name, res['id'])))
+                    root_path = '/' + h.lang()
+                h.redirect_to(str('%s/dataset/%s#comment_%s' % (root_path, c.pkg.name, res['id'])))
 
             return render("package/read.html")
 
@@ -129,8 +129,8 @@ class OnesaitPlatformController(base.BaseController):
                 root_path = toolkit.config.get('ckan.root_path','')
                 root_path = root_path.replace('{{LANG}}',h.lang())
                 if root_path == '':
-                   root_path = h.lang()
-                h.redirect_to(str('/%s/dataset/%s#comment_%s' % (root_path, c.pkg.name, res['id'])))
+                   root_path = '/' + h.lang()
+                h.redirect_to(str('%s/dataset/%s#comment_%s' % (root_path, c.pkg.name, res['id'])))
 
         return render("package/read.html")
 
@@ -155,7 +155,7 @@ class OnesaitPlatformController(base.BaseController):
         root_path = toolkit.config.get('ckan.root_path','')
         root_path = root_path.replace('{{LANG}}',h.lang())
         if root_path == '':
-            root_path = h.lang()
-        h.redirect_to(str('/%s/dataset/%s' % (root_path, c.pkg.name)))
+            root_path = '/' + h.lang()
+        h.redirect_to(str('%s/dataset/%s' % (root_path, c.pkg.name)))
 
         return render("package/read.html")
