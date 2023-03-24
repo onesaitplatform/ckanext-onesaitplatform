@@ -1,0 +1,161 @@
+.account-masthead {background: none;}
+.account-masthead .account ul li a {color: #404040;}
+.account-masthead .account ul li a:hover {
+  color: #404040;
+  background-color: #e8e8e8;
+}
+.account-masthead .account .notifications a span.badge {background-color: #404040;}
+
+.masthead {background-color: #404040}
+#main-navigation-toggle {background-color: #404040}
+.site-footer {
+  background-color: #404040; 
+  color: #eff5f4;
+}
+.masthead .nav > li > a, 
+.masthead .nav > li > a:focus, 
+.masthead .nav > li > a:hover, 
+.masthead .nav > .active > a, 
+.masthead .nav > .active > a:hover, 
+.masthead .nav > .active > a:focus {
+    color: #eff5f4;
+   background-color: #404040 !important;
+}
+.masthead .nav > li > a:focus, 
+.masthead .nav > li > a:hover, 
+.masthead .nav > .active > a, 
+.masthead .nav > .active > a:hover, 
+.masthead .nav > .active > a:focus {
+   text-decoration: underline;
+}
+.language-active {
+   font-weight: normal !important;
+   text-decoration: underline;
+}
+
+a {color: #404040;}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #404040 !important;
+    color: #eff5f4 !important;
+}
+
+.btn-primary {
+    color: #404040;
+    background-color: #e6c939;
+    border-color: #e6c939;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #404040;
+    background-color: #e6c939;
+    border-color: #404040;
+    box-shadow: none;
+}
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+    color: #404040;
+    background-color: #e6c939 !important;
+    border-color: #e6c939 !important;
+    box-shadow: none !important;
+}
+.btn-danger {
+    color: #404040;
+    background-color: #c8e0de;
+    border-color: #c8e0de;
+}
+.btn-danger:hover, 
+.btn-danger:focus {
+    color: #404040;
+    background-color: #c8e0de;
+    border-color: #404040;
+    box-shadow: none;
+}
+.btn-danger:active,
+.btn-danger:not(:disabled):not(.disabled).active,
+.btn-danger:not(:disabled):not(.disabled):active, 
+.show>.btn-danger.dropdown-toggle {
+    color: #404040;
+    background-color: #c8e0de !important;
+    border-color: #c8e0de !important;
+    box-shadow: none !important;
+}
+.btn-success {
+     color: #404040;
+    background-color: #c8e0de;
+    border-color: #c8e0de;
+}
+.btn-success:hover {
+    color: #404040;
+    background-color: #c8e0de;
+    border-color: #404040;
+}
+.btn-success:focus,
+.btn-success:active,
+.btn-success:not(:disabled):not(.disabled).active, 
+.btn-success:not(:disabled):not(.disabled):active, 
+.show>.btn-success.dropdown-toggle {
+    color: #404040;
+    background-color: #c8e0de!important;
+    border-color: #c8e0de !important;
+    box-shadow: none !important;
+}
+.btn.focus, .btn:focus {box-shadow: none;}
+
+.module-heading {background-color:#e8e8e8}
+.nav-item.active > a:before, .nav-aside li.active a:before {border-left-color:#c8e0de;}
+.nav-item.active > a, .nav-aside li.active a {
+   color: #404040;
+   background-color: #c8e0de;
+}
+.pill {
+   color: #404040;
+   background-color: #c8e0de;
+}
+.fa-remove:before, .fa-close:before, .fa-times:before {color: #404040;}
+.context-info .nums dl {
+    color: #404040;
+    background-color: rgba(230, 201, 57, 0.2);
+    border: rgba(230, 201, 57, 0.3);
+}
+.label-info {
+    color: #404040;
+    background-color: #c8e0de;
+}
+
+.flash-messages .alert {
+    color: #404040;
+    background-color: rgba(230, 201, 57, 0.2);
+    border: rgba(230, 201, 57, 0.3);
+}
+.well {
+    background-color: rgba(232, 232, 232, 0.4);
+    border: 1px solid rgba(232, 232, 232, 0.5);
+}
+
+.site-footer {border-top:none;}
+.footer-links a {color: #e8e8e8}
+.footer-links a:hover{
+  text-decoration: underline;
+   color: #eff5f4;
+}
+.site-footer .row .col-sm-12.col-md-6 {display: none;}
+.site-footer .social-icons a {background-color: #e8e8e8;}
+
+.hero {background: none !important;}
+.heading {color: #404040;}
+.subheading {color: #404040;}
+.ckan-lead {color: #404040 !important;}
+.ckan-sub {color: #404040 !important;}
+.counter {color: #404040;}
+.main-counter-data {color: #404040;}
+.main-counter {color: #404040;}
+.main-counter-data:hover {color: #404040 !important;}
+.main-counter:hover {color: #404040 !important;}
+.hero {min-height: unset !important;}
+form h1.heading {visibility:hidden;}
+form h1.heading:after {content:'Open Data Cabildo de Gran Canaria'; visibility:visible; position:absolute; left:0; right: 0;}
+form h3.subheading {visibility:hidden;}
+form h3.subheading:after {content:'Bienvenidos al Portal Open Data del Cabildo de Gran Canaria'; visibility:visible; position:absolute; left:0; right: 0;}
+.copyright-text {display:none;}
