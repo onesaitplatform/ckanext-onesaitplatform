@@ -21,7 +21,8 @@
 		</div>
 		<div class="col-md-3 col-xs-6 main-counter">
 			<i class="linearicons-graph" style="font-size: 32px;"></i>
-			<a href="{{ h.url_for('/stats') }}" class="main-counter-data"> <small>{{ _('Statistics') }}</small></a>
+			<a href="{{ h.url_for('/stats') }}" class="main-counter-data"> 
+			<span class="counter" style="opacity:0">0</span><small> {{ _('Statistics') }}</small></a>
 		</div>
    </div>
    {% endblock %} 

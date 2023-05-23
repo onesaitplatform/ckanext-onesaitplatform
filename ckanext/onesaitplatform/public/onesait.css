@@ -11856,3 +11856,10 @@ textarea[name="comment"] {
   margin-bottom: 10px;
 }
 
+div#main-navigation-toggle.navbar-collapse.in.show {
+	display: block !important;
+}
+
+.filters-modal .secondary {
+    z-index: 1 !important;
+}
