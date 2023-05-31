@@ -7,10 +7,10 @@ msgstr ""
 msgid "Open Data Showcases"
 msgstr ""
 
-msgid "Get all the information and related news from Open Data Onesait Platform."
+msgid "Get all the information and related news from Cabildo de Gran Canaria Open Data Portal."
 msgstr ""
 
-msgid "Open Data Service"
+msgid "Cabildo de Gran Canaria Open Data Portal"
 msgstr ""
 
 msgid "Making better use of public data with Open Data Onesait Platform."
@@ -83,4 +83,7 @@ msgid "Comments"
 msgstr ""
 
 msgid "Login to comment."
+msgstr ""
+
+msgid "Terms and Licenses"
 msgstr ""

@@ -27,11 +27,11 @@ msgstr "Aproveche al máximo sus datos y modele su negocio según estándares qu
 msgid "Open Data Showcases"
 msgstr "Destacados Open Data"
 
-msgid "Get all the information and related news from Open Data Onesait Platform."
-msgstr "Obtén toda la información y noticias relacionadas de Onesait Platform Open Data."
+msgid "Get all the information and related news from Cabildo de Gran Canaria Open Data Portal."
+msgstr "Obtén toda la información y noticias relacionadas del Portal de Datos Abiertos del Cabildo de Gran Canaria."
 
-msgid "Open Data Service"
-msgstr "Servicio Open Data"
+msgid "Cabildo de Gran Canaria Open Data Portal"
+msgstr "Portal de Datos Abiertos del Cabildo de Gran Canaria"
 
 msgid "Making better use of public data with Open Data Onesait Platform."
 msgstr "Haciendo un mejor uso de los datos públicos con Onesait Platform Open Data."
@@ -107,3 +107,6 @@ msgstr "Comentarios"
 
 msgid "Login to comment."
 msgstr "Logarse para comentar."
+
+msgid "Terms and Licenses"
+msgstr "Términos y Licencias"
