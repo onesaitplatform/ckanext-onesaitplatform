@@ -11863,3 +11863,8 @@ div#main-navigation-toggle.navbar-collapse.in.show {
 .filters-modal .secondary {
     z-index: 1 !important;
 }
+@media (max-width: 767px) {
+	.main-counter-data > small {
+		visibility: hidden;
+	}
+}
