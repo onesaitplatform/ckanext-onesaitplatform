@@ -18,7 +18,7 @@
 .masthead .nav > .active > a, 
 .masthead .nav > .active > a:hover, 
 .masthead .nav > .active > a:focus {
-    color: #eff5f4;
+   color: #eff5f4;
    background-color: #404040 !important;
 }
 .masthead .nav > li > a:focus, 
@@ -154,8 +154,105 @@ a {color: #404040;}
 .main-counter-data:hover {color: #404040 !important;}
 .main-counter:hover {color: #404040 !important;}
 .hero {min-height: unset !important;}
-form h1.heading {visibility:hidden;}
-form h1.heading:after {content:'Open Data Cabildo de Gran Canaria'; visibility:visible; position:absolute; left:0; right: 0;}
-form h3.subheading {visibility:hidden;}
-form h3.subheading:after {content:'Bienvenidos al Portal Open Data del Cabildo de Gran Canaria'; visibility:visible; position:absolute; left:0; right: 0;}
 .copyright-text {display:none;}
+
+@font-face{
+    font-family:Manrope-Light;
+	src: url('./fonts/Manrope-Light.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:Manrope-Regular;
+	src: url('./fonts/Manrope-Regular.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:Manrope-Medium;
+	src: url('./fonts/Manrope-Medium.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:Manrope-SemiBold;
+	src: url('./fonts/Manrope-SemiBold.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:Manrope-Bold;
+	src: url('./fonts/Manrope-Bold.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal
+}
+html {
+    font-family: "Manrope-Regular", "MyriadPro-Regular","SohoGothicPro-Regular", "Helvetica neue", Helvetica, Arial, sans-serif;
+}
+body {
+    font-family: "Manrope-Regular", "MyriadPro-Regular","SohoGothicPro-Regular", "Helvetica neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+tooltip {  
+	font-family: "Manrope-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.popover {
+	font-family: "Manrope-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ckan-menu-btn {
+	font-family: "Manrope-Regular", "SohoGothicPro-Regular", Arial, sans-serif;
+}
+.navbar-brand {
+	font-family: "Manrope-Regular", "SohoGothicPro-Regular", Arial, sans-serif;
+}
+.ckan-feature .ckan-feature-lead, .ckan-feature .ckan-figure-lead, .ckan-figure .ckan-feature-lead, .ckan-figure .ckan-figure-lead {
+	font-family: "Manrope-Regular", "SohoGothicPro-Regular", Arial, sans-serif;
+}
+.ckan-uppercase-sm {
+	font-family: "Manrope-Regular", "SohoGothicPro-Regular", Arial, sans-serif;
+}
+.ckan-nav-toggle > span {
+	font-family: "Manrope-Regular", "SohoGothicPro-Regular", Arial, sans-serif;
+}
+.ckan-counter {
+	font-family: "Manrope-Regular", "SohoGothicPro-Regular", Arial, sans-serif;
+}
+.ckan-counter-label {
+	font-family: "Manrope-Regular", "SohoGothicPro-Regular", Arial, sans-serif;
+}
+.context-info .nums dl dt {
+    font-family: "Manrope-Light", SohoGothicPro-Light;
+}
+.masthead .nav > li > a,
+.masthead .nav > li > a:focus,
+.masthead .nav > li > a:hover,
+.masthead .nav > .active > a,
+.masthead .nav > .active > a:hover,
+.masthead .nav > .active > a:focus {
+    font-family: Manrope-Bold, SohoGothicPro-Medium;
+}
+.ckan-section-heading .ckan-lead {
+	font-family: Manrope-Regular, PlayfairDisplay-Regular;
+}
+.homepage .module-search .module-content .heading {
+	font-family: Manrope-Regular, PlayfairDisplay-Regular;
+}
+.main-counter-data > small {
+    font-size: 65%;
+}
+
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 19px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 12px;
+}
+.counter{
+	padding-top: 5px;
+}
