@@ -256,3 +256,9 @@ h4 {
 .counter{
 	padding-top: 5px;
 }
+.homepage .module-search .module-content .heading {
+   font-size: 38px
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: #eff5f4;
+}
